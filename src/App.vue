@@ -18,6 +18,14 @@
             :selected="this.mission_slug"
             @click="selectMission(item)"
           />
+          <div class="mission-list-container">
+          <Mission
+            v-for="item in this.missions"
+            :key="item.slug"
+            :mission="item"
+            :selected="this.mission_slug"
+            @click="selectMission(item)"
+          />
         </div>
       </div>
     </section>
