@@ -18,16 +18,6 @@
             :selected="this.mission_slug"
             @click="selectMission(item)"
           />
-          <div class="mission-list-container">
-          <Mission
-            v-for="item in this.missions"
-            :key="item.slug"
-            :mission="item"
-            :selected="this.mission_slug"
-            @click="selectMission(item)"
-          />
-        </div>
-      </div>
     </section>
     <section class="section-container" id="events" style="width:435px; height:714px;">
       <div class="section-header clipped-medium-backward">
@@ -104,6 +94,11 @@ export default {
         {
           "slug": "001",
           "name": "Bug-Hunt",
+          "status": "start"
+        },
+        {
+          "slug": "002",
+          "name": "Vigilant-Gaze",
           "status": "start"
         },
       ],
